@@ -1,8 +1,59 @@
 import numpy as np
 import pandas as pd
 # import matplotlib.pyplot as plt
-from monopoly.envs.monopoly_env import MonopolyEnv
+from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
-agent = MonopolyEnv(2, 2, 200)
-from stable_baselines3.common.env_checker import check_env
-check_env(agent, warn=True)
+env = MonopolyEnv2(2, 2, 3, 200)
+# from stable_baselines3.common.env_checker import check_env
+#
+# check_env(env, warn=True)
+#
+# # if check_env(agent, warn=True):
+# print("Hell yeah!")
+
+# episodes = 1
+#
+# for episode in range(episodes):
+#     done = False
+#     obs = env.reset()
+#     while not done:  # not done:
+#         random_action = env.action_space.sample()
+#         print("action", random_action)
+#         obs, reward, done, trunc, info = env.step(random_action)
+#         # if reward != 0.:
+#         print('state',obs)
+#         print('reward', reward)
+#         print(info)
+#         print()
+#         print()
+
+# from stable_baselines3 import PPO, A2C, DQN
+# from stable_baselines3.common.env_util import make_vec_env
+#
+# # Instantiate the env
+# vec_env = make_vec_env(MonopolyEnv, n_envs=1, env_kwargs=dict(num_states=2,num_agents=2,max_turns=200))
+# # Train the agent
+# model = PPO("MlpPolicy", agent, verbose=1).learn(5000)
+# # Test the trained agent
+# # using the vecenv
+# obs = vec_env.reset()
+# n_steps = 200
+# for step in range(n_steps):
+#     action, _ = model.predict(obs, deterministic=True)
+#     print(f"Step {step + 1}")
+#     print("Action: ", action)
+#     obs, reward, done, info = vec_env.step(action)
+#     print("obs=", obs, "reward=", reward, "done=", done)
+#     vec_env.render()
+#     if done:
+#         # Note that the VecEnv resets automatically
+#         # when a done signal is encountered
+#         print("Goal reached!", "reward=", reward)
+#         break
+#
+#
+#
+#
+# print("done")
+# # else:
+#     print("oh Shit! here we go again!")

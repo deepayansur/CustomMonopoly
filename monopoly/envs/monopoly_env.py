@@ -229,7 +229,7 @@ class MonopolyEnv (gym.Env):
 #         Q[state] = {}
 #         for i in range(3):  # Number of actions = 3
 #             Q[state][i] = np.random.uniform(-2, 2, 1)
-#             # Q[state][i] = -10
+#             # Q[state][i] = -10000
 #     return Q
 #
 #
@@ -239,8 +239,8 @@ class MonopolyEnv (gym.Env):
 #     num_agents = 2
 #
 #     TOTAL_EPISODES = 1000
-#     SIM_RUN = 10
-#     SHOW_EVERY = 10
+#     SIM_RUN = 10000
+#     SHOW_EVERY = 10000
 #     OBSERVATION_SPACE = 2
 #     # LEARNING_RATE = 0.05 # alpha in the literature
 #     LEARNING_RATE = 0.05  # alpha in the literature
