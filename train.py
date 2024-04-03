@@ -43,7 +43,7 @@ def initialize_Q(num_states, num_agents):
         Q[state] = {}
         for i in range(3):  # Number of actions = 3
             Q[state][i] = np.random.uniform(-2, 2, 1)
-            # Q[state][i] = -10
+            # Q[state][i] = -10000
     return Q
 if __name__ == "__main__":
     # MAX_STATES = MAX_HOR_LENGTH*MAX_HOR_LENGTH

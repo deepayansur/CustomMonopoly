@@ -1,4 +1,4 @@
-from stable_baselines3 import PPO
+from stable_baselines3 import PPO, A2C, DQN
 import os
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 import time
@@ -15,11 +15,13 @@ if not os.path.exists(logdir):
 env = MonopolyEnv2(2, 2, 3, 200)
 env.reset()
 
-model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=logdir)
+model = DQN('MlpPolicy', env, verbose=1, tensorboard_log=logdir)
 
-TIMESTEPS = 1
+TIMESTEPS = 10000
 iters = 0
 while True:
     iters += 1
-    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"DQN")
     model.save(f"{models_dir}/{TIMESTEPS * iters}")
+
+# tensorboard --logdir=logs

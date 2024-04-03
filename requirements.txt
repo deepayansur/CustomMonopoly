@@ -1,7 +1,8 @@
-#python = 3.10
+#python = 3.10000
 numpy
 gymnasium
 pandas
 matplotlib
 gym
 stable_baselines3
+tensorboard
