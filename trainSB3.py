@@ -3,13 +3,13 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
-env = MonopolyEnv2(2, 2, 3, 200)
-# from stable_baselines3.common.env_checker import check_env
-#
-# check_env(env, warn=True)
-#
-# # if check_env(agent, warn=True):
-# print("Hell yeah!")
+env = MonopolyEnv2(2, 3, 2, 200)
+from stable_baselines3.common.env_checker import check_env
+
+check_env(env, warn=True)
+
+# if check_env(agent, warn=True):
+print("Hell yeah!")
 
 # episodes = 1
 #
@@ -17,6 +17,8 @@ env = MonopolyEnv2(2, 2, 3, 200)
 #     done = False
 #     obs = env.reset()
 #     while not done:  # not done:
+#         print(env.current_player.num)
+#         print(env.current_player.pos)
 #         random_action = env.action_space.sample()
 #         print("action", random_action)
 #         obs, reward, done, trunc, info = env.step(random_action)
@@ -24,6 +26,7 @@ env = MonopolyEnv2(2, 2, 3, 200)
 #         print('state',obs)
 #         print('reward', reward)
 #         print(info)
+#         print(env.board)
 #         print()
 #         print()
 

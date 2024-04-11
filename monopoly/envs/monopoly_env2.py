@@ -31,8 +31,9 @@ class Player:
         return board
 
 
+
 class MonopolyEnv2(gym.Env):
-    def __init__(self, num_states, num_agents, dice_size, max_turns=100):
+    def __init__(self, num_states,dice_size, num_agents=2, max_turns=100):
         self.static_agents = None
         self.actions = ["skip", "buy", "give"]
         self.action = None
@@ -43,7 +44,7 @@ class MonopolyEnv2(gym.Env):
         self.dice_size = dice_size
         self.episode_length = 0
         # self.no_operation = False
-        self.players = [Player(1, 2, "player1",False), Player(2, 1, "player2")]
+        self.players = [Player(1, 2, "player1", False), Player(2, 1, "player2")]
         self.roll_val = 0
         self.current_player_index = 1
         self.current_pos = 0
@@ -54,7 +55,9 @@ class MonopolyEnv2(gym.Env):
         self.board = np.zeros(self.num_states)
         # self.state_observation = [0, self.board]
         self.max_turns = max_turns
-        self.observation_space = spaces.Box(low=0,high=max(num_states,num_agents,dice_size),shape=(2,),dtype=np.float64)
+        dim = 3 + self.num_agents  #3 = agent_nos,cur_pos,cur_pos_owner
+        self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size),
+                                            shape=(dim,), dtype=np.float64)
         self.roll()
 
     def reset(self, seed=None, options=None):
@@ -81,9 +84,11 @@ class MonopolyEnv2(gym.Env):
 
         # self.state_observation = [self.x, self.board]
         # self.state_observation = [self.current_player.pos, self.board]
-        observation = np.array([self.current_pos, self.current_pos_owner]
-                                # ,self.roll_val]
-                                ,dtype=np.float64)
+        # observation = np.array([self.current_pos, self.current_pos_owner]# ,self.roll_val]
+        #                       , dtype=np.float64)
+
+        observation = self.getObservaton()
+
         # print(observation.dtype)
         self.roll()
         self.current_pos = (self.current_pos + self.roll_val) % self.num_states
@@ -92,6 +97,22 @@ class MonopolyEnv2(gym.Env):
 
     def action_space(self):
         return self.action_space
+
+    def getObservaton(self):
+        ownership = np.zeros(self.num_agents,dtype=np.float64)
+        for x in range(self.num_agents):
+            ownership[x] = list(self.board).count(x+1)
+
+        # print("ownership:" , ownership)
+
+        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner]# ,self.roll_val]
+                              , dtype=np.float64)
+
+        # print("observation:", observation)
+        observation = np.append(observation, ownership)
+
+        # print("observation total:", observation)
+        return observation
 
     def roll(self):
         self.roll_val = np.random.randint(low=1, high=self.dice_size)
@@ -103,7 +124,8 @@ class MonopolyEnv2(gym.Env):
         # return [self.current_player.pos, self.board]
 
     def step(self, action):
-        observation = np.array([self.current_pos, self.current_pos_owner])#, self.roll_val])
+        # observation = np.array([self.current_pos, self.current_pos_owner])#, self.roll_val])
+        observation = self.getObservaton()
         self.current_player.pos = self.current_pos
         # self.current_player_index = 0
         # self.current_pos_owner = 0
@@ -128,12 +150,18 @@ class MonopolyEnv2(gym.Env):
         if self.episode_length >= self.max_turns:
             self.done = True
 
-        for static_agent in self.static_agents:
-            self.move_static_agent(static_agent)
+        # for static_agent in self.static_agents:
+        #     self.move_static_agent(static_agent)
+
+        self.current_player_index = (self.current_player_index+1) % self.num_agents
+        self.current_player = self.players[self.current_player_index]
 
         self.roll()
-        self.current_pos = (self.current_pos + self.roll_val) % self.num_states
+        # self.current_pos = (self.current_pos + self.roll_val) % self.num_states
+        self.update_position_roll()
+        self.current_pos = self.current_player.pos
         self.current_pos_owner = self.board[self.current_pos]
+
 
         # print("episode_length:" + str(self.episode_length))
         # self.current_player_index = (self.current_player_index + 1)%self.num_states
@@ -147,7 +175,7 @@ class MonopolyEnv2(gym.Env):
         self.reward = 0
         if self.board[self.current_player.pos] == 0:
             if self.action == "buy":
-                self.reward += 0
+                self.reward += 1
             elif self.action == "give":
                 # Invalid action
                 self.reward += -10
@@ -161,7 +189,11 @@ class MonopolyEnv2(gym.Env):
                 self.reward += -1
             elif self.action == "give":
                 # Good action
-                self.reward += 1
+                # self.reward += 0
+                if self.current_player.num == 1:
+                    self.reward += 3
+                else:
+                    self.reward -= 3
             else:
                 # Skipping even when it can sell
                 self.reward += -2
