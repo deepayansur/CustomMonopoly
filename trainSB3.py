@@ -4,31 +4,31 @@ import pandas as pd
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
 env = MonopolyEnv2(2, 3, 2, 200)
-from stable_baselines3.common.env_checker import check_env
-
-check_env(env, warn=True)
-
-# if check_env(agent, warn=True):
-print("Hell yeah!")
-
-# episodes = 1
+# from stable_baselines3.common.env_checker import check_env
 #
-# for episode in range(episodes):
-#     done = False
-#     obs = env.reset()
-#     while not done:  # not done:
-#         print(env.current_player.num)
-#         print(env.current_player.pos)
-#         random_action = env.action_space.sample()
-#         print("action", random_action)
-#         obs, reward, done, trunc, info = env.step(random_action)
-#         # if reward != 0.:
-#         print('state',obs)
-#         print('reward', reward)
-#         print(info)
-#         print(env.board)
-#         print()
-#         print()
+# check_env(env, warn=True)
+#
+# # if check_env(agent, warn=True):
+# print("Hell yeah!")
+
+episodes = 1
+
+for episode in range(episodes):
+    done = False
+    obs = env.reset()
+    while not done:  # not done:
+        print(env.current_player.num)
+        print(env.current_player.pos)
+        random_action = env.action_space.sample()
+        print("action", random_action)
+        obs, reward, done, trunc, info = env.step(random_action)
+        # if reward != 0.:
+        print('state',obs)
+        print('reward', reward)
+        print(info)
+        print(env.board)
+        print()
+        print()
 
 # from stable_baselines3 import PPO, A2C, DQN
 # from stable_baselines3.common.env_util import make_vec_env

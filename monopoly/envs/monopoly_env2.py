@@ -92,6 +92,7 @@ class MonopolyEnv2(gym.Env):
         # print(observation.dtype)
         self.roll()
         self.current_pos = (self.current_pos + self.roll_val) % self.num_states
+        self.current_player.pos = self.current_pos
         self.current_pos_owner = self.board[self.current_pos]
         return observation,{}
 
@@ -99,11 +100,16 @@ class MonopolyEnv2(gym.Env):
         return self.action_space
 
     def getObservaton(self):
+        """
+
+        :return:
+        """
         ownership = np.zeros(self.num_agents,dtype=np.float64)
+        # We know the ownership of "agent 0"
         for x in range(self.num_agents):
             ownership[x] = list(self.board).count(x+1)
 
-        # print("ownership:" , ownership)
+        print("ownership:" , ownership)
 
         observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner]# ,self.roll_val]
                               , dtype=np.float64)
