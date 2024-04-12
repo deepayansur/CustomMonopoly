@@ -4,12 +4,19 @@ import pandas as pd
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
 env = MonopolyEnv2(2, 2, 3, 200)
+
+######################### RUN THIS TO CHECK ENV #######################
+
 # from stable_baselines3.common.env_checker import check_env
 #
 # check_env(env, warn=True)
 #
 # # if check_env(agent, warn=True):
 # print("Hell yeah!")
+
+#########################################################################
+
+######################### RUN FOR DRY RUN ###############################
 
 # episodes = 1
 #
@@ -26,6 +33,10 @@ env = MonopolyEnv2(2, 2, 3, 200)
 #         print(info)
 #         print()
 #         print()
+
+
+########################################################################
+
 
 # from stable_baselines3 import PPO, A2C, DQN
 # from stable_baselines3.common.env_util import make_vec_env
