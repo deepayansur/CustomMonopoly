@@ -31,7 +31,19 @@ class Player:
             pass
         return board
 
+class City:
 
+    price_per_house = 5 #common for all houses
+
+    def __init__(self, name, color, owner=None, num_houses=0, is_mortgaged=False, rent_1_house=10, rent_2_house=15, mortgage_cost=30):
+        self.name = name
+        self.color = color
+        self.owner = owner
+        self.num_houses = num_houses
+        self.is_mortgages = is_mortgaged
+        self.rent_1_house = rent_1_house
+        self.rent_2_house = rent_2_house
+        self.mortgage_cost = mortgage_cost
 
 class MonopolyEnv2(gym.Env):
     def __init__(self, num_states,dice_size, num_agents=2, max_turns=100):
