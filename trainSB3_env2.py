@@ -24,11 +24,5 @@ while True:
     model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
     model.save(f"{models_dir}/{TIMESTEPS * iters}")
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 420f361f63ac1a7b6813cf36d9407439379675f3
 ###### RUN THE BELOW CODE IN CMD FOR PROGRESS GRAPHS #######
 # tensorboard --logdir=logs
-
-
