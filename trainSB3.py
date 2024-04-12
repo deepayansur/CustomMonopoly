@@ -3,7 +3,7 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
-env = MonopolyEnv2(2, 2, 3, 200)
+env = MonopolyEnv2(4, 3, 2, 200)
 
 ######################### RUN THIS TO CHECK ENV #######################
 
@@ -18,21 +18,31 @@ env = MonopolyEnv2(2, 2, 3, 200)
 
 ######################### RUN FOR DRY RUN ###############################
 
-# episodes = 1
-#
-# for episode in range(episodes):
-#     done = False
-#     obs = env.reset()
-#     while not done:  # not done:
-#         random_action = env.action_space.sample()
-#         print("action", random_action)
-#         obs, reward, done, trunc, info = env.step(random_action)
-#         # if reward != 0.:
-#         print('state',obs)
-#         print('reward', reward)
-#         print(info)
-#         print()
-#         print()
+
+episodes = 1
+
+for episode in range(episodes):
+    done = False
+    obs = env.reset()
+    while not done:  # not done:
+        print(f"Current_player: {env.current_player.num}")
+        print(f"Position before roll: {env.current_player.pos}")
+        random_action = env.action_space.sample()
+        print("action", random_action)
+
+        obs, reward, done, trunc, info = env.step(random_action)
+        print(f"Roll: {env.roll_val}")
+        print(f"Position after roll: {env.current_pos}")
+        # if reward != 0.:
+        print('state',obs)
+        print('reward', reward)
+        print(info)
+        print(env.board)
+        print()
+        print()
+
+
+########################################################################
 
 
 ########################################################################
