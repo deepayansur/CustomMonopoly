@@ -13,6 +13,7 @@ class Player:
         self.prev_pos = []
         self.possession_indices = []
         self.isStatic = static
+        self.money = 1500
 
     def change_pos(self, roll_dice, num_states):
         self.pos = (self.pos + roll_dice) % num_states
@@ -50,13 +51,14 @@ class MonopolyEnv2(gym.Env):
         self.current_pos = 0
         self.current_pos_owner = 0
         self.current_player = self.players[self.current_player_index]
+        self.player_init_money = 1500
         self.num_states = num_states
         self.num_agents = num_agents
         self.board = np.zeros(self.num_states)
         # self.state_observation = [0, self.board]
         self.max_turns = max_turns
-        dim = 3 + self.num_agents  #3 = agent_nos,cur_pos,cur_pos_owner
-        self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size),
+        dim = 4 + self.num_agents  #4 = agent_nos,cur_pos,cur_pos_owner,money
+        self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size,self.player_init_money),
                                             shape=(dim,), dtype=np.float64)
         self.roll()
 
@@ -107,8 +109,8 @@ class MonopolyEnv2(gym.Env):
 
         # print("ownership:" , ownership)
 
-        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner]
-                              , dtype=np.float64)
+        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner,
+                                self.current_player.money], dtype=np.float64)
 
         # print("observation:", observation)
         observation = np.append(observation, ownership)
