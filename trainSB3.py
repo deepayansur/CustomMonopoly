@@ -34,7 +34,7 @@ for episode in range(episodes):
         print(f"Roll: {env.roll_val}")
         print(f"Position after roll: {env.current_pos}")
         # if reward != 0.:
-        print('state',obs)
+        print('state', [format(num, '.2f') for num in obs])
         print('reward', reward)
         print(info)
         print(env.board)

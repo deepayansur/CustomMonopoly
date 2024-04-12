@@ -16,7 +16,10 @@ class Player:
         self.money = 1500
 
     def change_pos(self, roll_dice, num_states):
-        self.pos = (self.pos + roll_dice) % num_states
+        cur_pos = self.pos + roll_dice
+        self.pos = (cur_pos) % num_states
+        if(cur_pos >= num_states):
+            self.money += 1500
 
     def buy(self, board):
         self.possession_indices.append(self.pos)
