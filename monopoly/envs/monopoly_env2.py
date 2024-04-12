@@ -74,44 +74,40 @@ class MonopolyEnv2(gym.Env):
         # players[1] = Player(2, 1, "player2")
 
         self.roll_val = 0
+
         self.current_player_index = 1
-        self.current_pos_owner = 0
-        self.current_pos = 0
         self.current_player = self.players[self.current_player_index]
 
-        # self.learnable_agents = self.players[1:]
-        self.static_agents = self.players[1:]
-
-        # self.state_observation = [self.x, self.board]
-        # self.state_observation = [self.current_player.pos, self.board]
-        # observation = np.array([self.current_pos, self.current_pos_owner]# ,self.roll_val]
-        #                       , dtype=np.float64)
-
-        observation = self.getObservaton()
-
-        # print(observation.dtype)
-        self.roll()
-        self.current_pos = (self.current_pos + self.roll_val) % self.num_states
-        self.current_player.pos = self.current_pos
+        self.current_pos = 0
         self.current_pos_owner = self.board[self.current_pos]
+        
+        # self.learnable_agents = self.players[1:]
+        # self.static_agents = self.players[1:]
+
+        observation = self.getObservation()
+
+        # self.roll()
+        # self.current_pos = (self.current_pos + self.roll_val) % self.num_states
+        # self.current_player.pos = self.current_pos
+
         return observation,{}
 
     def action_space(self):
         return self.action_space
 
-    def getObservaton(self):
+    def getObservation(self):
         """
 
         :return:
         """
         ownership = np.zeros(self.num_agents,dtype=np.float64)
-        # We know the ownership of "agent 0"
+        # We know the ownership of "agent 0"=Total_states - addition of all agents possessions
         for x in range(self.num_agents):
             ownership[x] = list(self.board).count(x+1)
 
-        print("ownership:" , ownership)
+        # print("ownership:" , ownership)
 
-        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner]# ,self.roll_val]
+        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner]
                               , dtype=np.float64)
 
         # print("observation:", observation)
@@ -125,33 +121,20 @@ class MonopolyEnv2(gym.Env):
 
     def update_position_roll(self):
         self.current_player.change_pos(self.roll_val, self.num_states)
-        # self.x = (self.x + roll) % self.num_states
-        # return [self.x, self.board]
-        # return [self.current_player.pos, self.board]
 
     def step(self, action):
-        # observation = np.array([self.current_pos, self.current_pos_owner])#, self.roll_val])
-        observation = self.getObservaton()
-        self.current_player.pos = self.current_pos
-        # self.current_player_index = 0
-        # self.current_pos_owner = 0
-        if self.episode_length > self.max_turns:
-            self.done = False
-            self.truncated = True
-            # self.no_operation = True
-            return observation, self.reward, self.done, self.truncated , {"episode_length": self.episode_length}
 
-        if np.all(self.board == 2):
-            self.done = True
-            # self.no_operation = True
-            return observation, self.reward, self.done,self.truncated , {"episode_length": self.episode_length}
+        self.roll()
+        self.update_position_roll()
+        self.current_pos = self.current_player.pos
+        self.current_pos_owner = self.board[self.current_pos]
+
+        observation = self.getObservation()
 
         self.action = self.actions[action]
-        # self.action = self.actions[action]
         self.reward = self.get_reward()
         self.take_action()
         self.episode_length += 1
-        # self.no_operation = False
 
         if self.episode_length >= self.max_turns:
             self.done = True
@@ -159,19 +142,29 @@ class MonopolyEnv2(gym.Env):
         # for static_agent in self.static_agents:
         #     self.move_static_agent(static_agent)
 
-        self.current_player_index = (self.current_player_index+1) % self.num_agents
-        self.current_player = self.players[self.current_player_index]
-
-        self.roll()
-        # self.current_pos = (self.current_pos + self.roll_val) % self.num_states
-        self.update_position_roll()
-        self.current_pos = self.current_player.pos
-        self.current_pos_owner = self.board[self.current_pos]
+        # self.roll()
+        # # self.current_pos = (self.current_pos + self.roll_val) % self.num_states
+        # self.update_position_roll()
+        # self.current_pos = self.current_player.pos
+        # self.current_pos_owner = self.board[self.current_pos]
 
 
-        # print("episode_length:" + str(self.episode_length))
-        # self.current_player_index = (self.current_player_index + 1)%self.num_states
+        if self.episode_length >= self.max_turns:
+            self.done = False
+            self.truncated = True
+            return observation, self.reward, self.done, self.truncated , {"episode_length": self.episode_length}
+
+        if np.all(self.board == 2):
+            self.done = True
+            return observation, self.reward, self.done,self.truncated , {"episode_length": self.episode_length}
+
+        self.change_turn()
+
         return observation, self.reward, self.done,self.truncated , {"episode_length": self.episode_length}
+
+    def change_turn(self):
+        self.current_player_index = (self.current_player_index + 1) % self.num_agents
+        self.current_player = self.players[self.current_player_index]
 
     def get_reward(self):
         '''

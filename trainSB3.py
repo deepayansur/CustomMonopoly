@@ -3,7 +3,10 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
-env = MonopolyEnv2(2, 3, 2, 200)
+env = MonopolyEnv2(4, 3, 2, 200)
+
+######################### RUN THIS TO CHECK ENV #######################
+
 # from stable_baselines3.common.env_checker import check_env
 #
 # check_env(env, warn=True)
@@ -11,17 +14,25 @@ env = MonopolyEnv2(2, 3, 2, 200)
 # # if check_env(agent, warn=True):
 # print("Hell yeah!")
 
+#########################################################################
+
+######################### RUN FOR DRY RUN ###############################
+
+
 episodes = 1
 
 for episode in range(episodes):
     done = False
     obs = env.reset()
     while not done:  # not done:
-        print(env.current_player.num)
-        print(env.current_player.pos)
+        print(f"Current_player: {env.current_player.num}")
+        print(f"Position before roll: {env.current_player.pos}")
         random_action = env.action_space.sample()
         print("action", random_action)
+
         obs, reward, done, trunc, info = env.step(random_action)
+        print(f"Roll: {env.roll_val}")
+        print(f"Position after roll: {env.current_pos}")
         # if reward != 0.:
         print('state',obs)
         print('reward', reward)
@@ -29,6 +40,9 @@ for episode in range(episodes):
         print(env.board)
         print()
         print()
+
+
+########################################################################
 
 # from stable_baselines3 import PPO, A2C, DQN
 # from stable_baselines3.common.env_util import make_vec_env
