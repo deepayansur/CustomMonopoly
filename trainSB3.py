@@ -40,7 +40,11 @@ for episode in range(episodes):
         owner = []
         worths = []
         for city in env.board:
-            owner.append([city.name, city.owner])
+            if city.owner != None:
+                owner_num = city.owner.num
+            else:
+                owner_num = 0
+            owner.append([city.name, owner_num])
         for player in env.players:
             worths.append([player.num, player.money])
         print(owner)
