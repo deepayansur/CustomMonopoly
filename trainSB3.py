@@ -37,7 +37,10 @@ for episode in range(episodes):
         print('state', [format(num, '.2f') for num in obs])
         print('reward', reward)
         print(info)
-        print(env.board)
+        owner = []
+        for city in env.board:
+            owner.append(city.owner)
+        print(owner)
         print()
         print()
 
