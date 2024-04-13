@@ -38,11 +38,17 @@ for episode in range(episodes):
         print('reward', reward)
         print(info)
         owner = []
+        worths = []
         for city in env.board:
             owner.append([city.name, city.owner])
+        for player in env.players:
+            worths.append([player.num, player.money])
         print(owner)
+        print(worths)
         print()
         print()
+        if trunc:
+            done = True
 
 
 ########################################################################

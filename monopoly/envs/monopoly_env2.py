@@ -25,24 +25,31 @@ class Player:
         if (cur_pos >= num_states):
             self.money += 100
 
-    def buy(self, board, cities):
-        city = cities[self.pos]
+    def buy(self, board):
+        city = board[self.pos]
+        if int(city.owner) != 0:
+            print(f"City is already owned by {city.owner}")
+            return board
+
         if city.price > self.money:
+            print(f"Insufficient money")
             return board
 
         self.possession_indices.append(self.pos)
-        board[self.pos] = self.num
+        board[self.pos].owner = self.num
         self.money -= city.price
 
         return board
 
-    def sell(self, board, p2_num):
-        if self.pos in self.possession_indices:
-            self.possession_indices.remove(self.pos)
-            board[self.pos] = p2_num
+    def give(self, board):
+
+        if self.pos not in self.possession_indices:
+            print(f"City not owned by current player")
             return board
-        else:
-            pass
+
+        self.possession_indices.remove(self.pos)
+        board[self.pos].owner = self.ally_num
+        return board
 
     def mortgage(self, board, cities):
         if self.pos not in self.possession_indices:
@@ -114,8 +121,11 @@ class MonopolyEnv2(gym.Env):
         self.board = np.array(self.create_board(),dtype=City)
         # self.state_observation = [0, self.board]
         self.max_turns = max_turns
-        dim = 4 + self.num_agents  # 4 = agent_nos,cur_pos,cur_pos_owner,money
-        self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size, self.player_init_money),
+        # dim = 4 + self.num_agents  # 4 = agent_nos,cur_pos,cur_pos_owner,money
+        # self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size, self.player_init_money),
+        #                                     shape=(dim,), dtype=np.float64)
+        dim = 3 + self.num_agents
+        self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size),
                                             shape=(dim,), dtype=np.float64)
         self.roll()
 
@@ -180,8 +190,10 @@ class MonopolyEnv2(gym.Env):
 
         # print("ownership:" , ownership)
 
-        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner,
-                                self.current_player.money], dtype=np.float64)
+        # observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner,
+        #                         self.current_player.money], dtype=np.float64)
+        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner,],
+                               dtype=np.float64)
 
         # print("observation:", observation)
         observation = np.append(observation, ownership)
@@ -299,15 +311,18 @@ class MonopolyEnv2(gym.Env):
 
     def take_action(self):
         if self.action == "buy":
-            if int(self.board[self.current_player.pos].owner) == 0:
-                self.board[self.current_player.pos].owner = self.current_player.num
+            self.board = self.current_player.buy(self.board)
+            # if int(self.board[self.current_player.pos].owner) == 0:
+            #     self.board[self.current_player.pos].owner = self.current_player.num
 
             # else:
             #     print(str(self.board[self.current_player.pos]) + " already owned by different player, cant BUY")
 
         elif self.action == "give":
-            if int(self.board[self.current_player.pos].owner) == self.current_player.num:
-                self.board[self.current_player.pos].owner = self.current_player.ally_num
+            self.board = self.current_player.give(self.board)
+
+            # if int(self.board[self.current_player.pos].owner) == self.current_player.num:
+            #     self.board[self.current_player.pos].owner = self.current_player.ally_num
             # else:
             #     print(str(self.board[self.current_player.pos]) + " is not owned by current player, cant GIVE")
 
