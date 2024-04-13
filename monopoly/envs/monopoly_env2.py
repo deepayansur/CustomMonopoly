@@ -21,32 +21,69 @@ class Player:
         if(cur_pos >= num_states):
             self.money += 1500
 
-    def buy(self, board):
+    def buy(self, board, cities):
+        city = cities[self.pos]
+        if city.price > self.money:
+            return board
+
         self.possession_indices.append(self.pos)
         board[self.pos] = self.num
+        self.money -= city.price
+
         return board
 
     def sell(self, board, p2_num):
         if self.pos in self.possession_indices:
             self.possession_indices.remove(self.pos)
             board[self.pos] = p2_num
+            return board
         else:
             pass
+
+    def mortgage(self, board, cities):
+        if self.pos not in self.possession_indices:
+            return board
+
+        city = cities[self.pos]
+        if city.num_houses == 0:
+            city.is_mortgaged = True
+        else:
+            print(f"Handle the condition where mortgage was selected, but city has houses")
+
         return board
 
+    def pay_rent(self, board, cities):
+        city = cities[self.pos]
+        if city.owner == 0:
+            return
+
+        self.money -= city.rents_array[city.num_houses]
+        city.owner.money += city.rents_array[city.num_houses]
+
+
 class City:
+    price_per_house = 5  # common for all houses
 
-    price_per_house = 5 #common for all houses
-
-    def __init__(self, name, color, owner=None, num_houses=0, is_mortgaged=False, rent_1_house=10, rent_2_house=15, mortgage_cost=30):
+    def _init_(self, name, color, price, price_per_house, rent, rent_1_house, rent_2_house,
+                 rent_3_house, rent_4_house, rent_hotel, mortgage, owner=0, num_houses=0, is_mortgaged=False):
         self.name = name
         self.color = color
         self.owner = owner
         self.num_houses = num_houses
-        self.is_mortgages = is_mortgaged
+        self.is_mortgaged = is_mortgaged
+        self.price = price
+        self.price_per_house = price_per_house
+        self.rent = rent
         self.rent_1_house = rent_1_house
         self.rent_2_house = rent_2_house
-        self.mortgage_cost = mortgage_cost
+        self.rent_3_house = rent_3_house
+        self.rent_4_house = rent_4_house
+        self.rent_hotel = rent_hotel
+
+        self.rents_array = [self.rent, self.rent_1_house, self.rent_2_house,
+                            self.rent_3_house, self.rent_4_house, self.rent_hotel]
+
+        self.mortgage=mortgage
 
 class MonopolyEnv2(gym.Env):
     def __init__(self, num_states,dice_size, num_agents=2, max_turns=100):
