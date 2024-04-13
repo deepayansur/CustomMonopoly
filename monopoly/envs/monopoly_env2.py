@@ -23,7 +23,7 @@ class Player:
         cur_pos = self.pos + roll_dice
         self.pos = (cur_pos) % num_states
         if (cur_pos >= num_states):
-            self.money += 1500
+            self.money += 100
 
     def buy(self, board, cities):
         city = cities[self.pos]
@@ -68,8 +68,7 @@ class Player:
 
 class City:
     price_per_house = 5  # common for all houses
-
-   def __init__(self, name, color, price, price_per_house, rent, rent_1_house, rent_2_house,
+    def __init__(self, name, color, price, price_per_house, rent, rent_1_house, rent_2_house,
                  rent_3_house, rent_4_house, rent_hotel, mortgage, owner=0, num_houses=0, is_mortgaged=False):
         self.name = name
         self.color = color

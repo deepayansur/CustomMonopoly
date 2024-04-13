@@ -39,7 +39,7 @@ for episode in range(episodes):
         print(info)
         owner = []
         for city in env.board:
-            owner.append(city.owner)
+            owner.append([city.name, city.owner])
         print(owner)
         print()
         print()
