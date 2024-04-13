@@ -207,13 +207,20 @@ class MonopolyEnv2(gym.Env):
     def update_position_roll(self):
         self.current_player.change_pos(self.roll_val, self.num_states)
 
+    def pay_rent(self):
+        rent = self.board[self.current_pos].price
+        self.current_player.money -= rent
+        self.players[self.current_pos_owner-1].money += rent
+
     def step(self, action):
 
         self.roll()
         self.update_position_roll()
         self.current_pos = self.current_player.pos
         self.current_pos_owner = self.board[self.current_pos].owner
-
+        if self.current_pos_owner!=self.current_player_index:
+            # print(self.current_pos_owner," is not ", self.current_player_index)
+            self.pay_rent()
         observation = self.getObservation()
 
         self.action = self.actions[action]
