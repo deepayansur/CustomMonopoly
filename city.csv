@@ -1,6 +1,6 @@
 ﻿name,color,price,price_per_house,rent,rent_1_house,rent_2_house,rent_3_house,rent_4_house,rent_hotel,mortgage
-Mediterranean Avenue/Old Kent Rd,brown,60,50,2,10,30,90,160,250,30
-Baltic Avenue/Whitechapel Rd,brown,60,50,4,20,60,180,320,450,30
-"Oriental Avenue/The Angel, Islington",cyan,100,50,6,30,90,270,400,550,50
-Vermont Avenue/Euston Rd,cyan,100,50,6,30,90,270,400,550,50
-Connecticut Avenue/Pentonville Rd,cyan,120,50,8,40,100,300,450,600,60
+Old Kent Rd,brown,60,50,2,10,30,90,160,250,30
+Whitechapel Rd,brown,60,50,4,20,60,180,320,450,30
+The Angel Islington,cyan,100,50,6,30,90,270,400,550,50
+Euston Rd,cyan,100,50,6,30,90,270,400,550,50
+Pentonville Rd,cyan,120,50,8,40,100,300,450,600,60

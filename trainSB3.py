@@ -24,6 +24,9 @@ episodes = 1
 for episode in range(episodes):
     done = False
     obs = env.reset()
+    file_path = "ownership_data.txt"
+    with open(file_path, 'w') as file:
+        file.write("")
     while not done:  # not done:
         print(f"Current_player: {env.current_player.num}")
         print(f"Position before roll: {env.current_player.pos}")
@@ -43,10 +46,17 @@ for episode in range(episodes):
             owner.append([city.name, city.owner])
         for player in env.players:
             worths.append([player.num, player.money])
-        print(owner)
+        print("OWNER:",owner)
         print(worths)
         print()
-        print()
+        owner_tuple = [(location, value) for location, value in owner]
+        file_path = "ownership_data.txt"
+        with open(file_path, 'a') as file:
+            file.write(str(owner_tuple)+"\n")
+                
+        file_path = "output_data.txt"
+
+        print("Data has been written to file")
         if trunc:
             done = True
 
