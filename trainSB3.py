@@ -7,12 +7,12 @@ env = MonopolyEnv2(4, 3, 2, 200)
 
 ######################### RUN THIS TO CHECK ENV #######################
 
-# from stable_baselines3.common.env_checker import check_env
-#
-# check_env(env, warn=True)
-#
-# # if check_env(agent, warn=True):
-# print("Hell yeah!")
+from stable_baselines3.common.env_checker import check_env
+
+check_env(env, warn=True)
+
+# if check_env(agent, warn=True):
+print("Hell yeah!")
 
 #########################################################################
 
@@ -43,10 +43,18 @@ for episode in range(episodes):
             owner.append([city.name, city.owner])
         for player in env.players:
             worths.append([player.num, player.money])
-        print(owner)
+        print(owner)
         print(worths)
-        print()
-        print()
+	print()
+	print()
+        owner_tuple = [(location, value) for location, value in owner]
+        file_path = "ownership_data.txt"
+        with open(file_path, 'a') as file:
+            file.write(str(owner_tuple)+"\n")
+                
+        file_path = "output_data.txt"
+
+        print("Data has been written to file")
         if trunc:
             done = True
 
