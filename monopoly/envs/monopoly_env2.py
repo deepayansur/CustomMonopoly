@@ -66,7 +66,7 @@ class Player:
 
     def pay_rent(self, board):
         city = board[self.pos]
-        if city.owner == 0:
+        if city.owner is None:
             return
 
         rent = city.rents_array[city.num_houses]
@@ -202,7 +202,7 @@ class MonopolyEnv2(gym.Env):
         """
         ownership = np.zeros(self.num_agents, dtype=np.float64)
         # We know the ownership of "agent 0"=Total_states - addition of all agents possessions
-
+        # city = self.board[self.current_pos]
         for city in self.board:
             if city.owner != None:
                 ownership[city.owner.num-1] += 1
@@ -211,6 +211,10 @@ class MonopolyEnv2(gym.Env):
 
         # observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner,
         #                         self.current_player.money], dtype=np.float64)
+        # Potential solution Normalize all observations to 0 and 1 for NN
+        # Should we send city property? - Experiment and try. If the model doesn't converge,
+        # then include all the possible info necessary for decision making
+        # Maptlotlib visualization/rendering for monopoly.
         if self.current_pos_owner is not None:
             owner = self.current_pos_owner.num
         else:
@@ -243,19 +247,6 @@ class MonopolyEnv2(gym.Env):
         self.reward = self.get_reward()
         self.take_action()
         self.episode_length += 1
-
-        if self.episode_length >= self.max_turns:
-            self.done = True
-
-        # for static_agent in self.static_agents:
-        #     self.move_static_agent(static_agent)
-
-        # self.roll()
-        # # self.current_pos = (self.current_pos + self.roll_val) % self.num_states
-        # self.update_position_roll()
-        # self.current_pos = self.current_player.pos
-        # self.current_pos_owner = self.board[self.current_pos]
-
 
         if self.episode_length >= self.max_turns:
             self.done = False
@@ -341,6 +332,8 @@ class MonopolyEnv2(gym.Env):
 
         elif self.action == "give":
             self.board = self.current_player.give(self.board)
+
+        self.current_player.pay_rent(self.board)
 
     def move_static_agent(self, static_agent):
         # roll = np.random.randint(low=1, high=3)
