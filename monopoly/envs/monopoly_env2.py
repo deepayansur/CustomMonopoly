@@ -29,28 +29,28 @@ class Player:
         city = board[self.pos]
         if city.owner is not None:
             print(f"City is already owned by {city.owner.num}")
-            return board
+            return board, True
 
         if city.price > self.money:
             print(f"Insufficient money")
-            return board
+            return board, True
 
         self.possession_indices.append(self.pos)
         board[self.pos].owner = self
         self.money -= city.price
 
-        return board
+        return board, False
 
     def give(self, board):
 
         if self.pos not in self.possession_indices:
             print(f"City not owned by current player")
-            return board
+            return board, True
 
         self.possession_indices.remove(self.pos)
         # board[self.pos].owner = self.ally_num
         board[self.pos].owner = self.ally
-        return board
+        return board, False
 
     def mortgage(self, board, cities):
         if self.pos not in self.possession_indices:
@@ -67,11 +67,18 @@ class Player:
     def pay_rent(self, board):
         city = board[self.pos]
         if city.owner is None:
-            return
+            return False
 
         rent = city.rents_array[city.num_houses]
+
+        if rent > self.money:
+            print(f"Insufficient money")
+            return True
+        
         self.money -= rent
         city.owner.money += rent
+
+        return False
 
     def assign_ally(self, ally):
         self.ally = ally
@@ -131,6 +138,7 @@ class MonopolyEnv2(gym.Env):
         self.board = np.array(self.create_board(),dtype=City)
         # self.state_observation = [0, self.board]
         self.max_turns = max_turns
+        self.invalid_action = False
         # dim = 4 + self.num_agents  # 4 = agent_nos,cur_pos,cur_pos_owner,money
         # self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size, self.player_init_money),
         #                                     shape=(dim,), dtype=np.float64)
@@ -244,8 +252,8 @@ class MonopolyEnv2(gym.Env):
         observation = self.getObservation()
 
         self.action = self.actions[action]
-        self.reward = self.get_reward()
         self.take_action()
+        self.reward = self.get_reward()
         self.episode_length += 1
 
         if self.episode_length >= self.max_turns:
@@ -265,52 +273,75 @@ class MonopolyEnv2(gym.Env):
         self.current_player_index = (self.current_player_index + 1) % self.num_agents
         self.current_player = self.players[self.current_player_index]
 
+    def get_valid_actions(self):
+        valid_actions = []
+        if self.board[self.current_player.pos].owner is None:
+            valid_actions=["skip", "buy"]
+        elif self.board[self.current_player.pos].owner.num == 1 and self.current_player.num == 1:
+            valid_actions=["give"]
+        else:
+            valid_actions=["skip"]
+        return valid_actions
+        
     def get_reward(self):
         '''
         Return value : rewards
         Input argument.
         '''
         self.reward = 0
-        if self.board[self.current_player.pos].owner is None:
-            if self.action == "buy":
-                self.reward += 1
-            elif self.action == "give":
-                # Invalid action
-                self.reward += -10
-            else:
-                # Skipping even when it can buy
-                self.reward += -2
-
-        elif self.board[self.current_player.pos].owner.num == 1:
-            if self.action == "buy":
-                # Trying to buy already bought land
-                self.reward += -1
-            elif self.action == "give":
-                # Good action
-                # self.reward += 0
-                if self.current_player.num == 1:
-                    self.reward += 3
-                else:
-                    self.reward -= 3
-            else:
-                # Skipping even when it can sell
-                self.reward += -2
-
+        if self.invalid_action:
+            self.reward -= 10
+            self.invalid_action= False
         else:
-            if self.action == "buy":
-                # Trying to buy already bought land
-                self.reward += -1
-            elif self.action == "give":
-                # Invalid action
-                self.reward += -1
+            valid_actions = self.get_valid_actions()
+            if self.action in valid_actions:
+                if self.action != "skip":
+                    self.reward += 3
             else:
-                # Skipping correct action
-                self.reward += 0
+                self.reward -= 2
+        
+        # if self.board[self.current_player.pos].owner is None:
+        #     if self.action == "buy":
+        #         self.reward += 1
+        #     elif self.action == "give":
+        #         # Invalid action
+        #         self.reward += -10
+        #     else:
+        #         # Skipping even when it can buy
+        #         self.reward += -2
+
+        # elif self.board[self.current_player.pos].owner.num == 1:
+        #     if self.action == "buy":
+        #         # Trying to buy already bought land
+        #         self.reward += -1
+        #     elif self.action == "give":
+        #         # Good action
+        #         # self.reward += 0
+        #         if self.current_player.num == 1:
+        #             self.reward += 3
+        #         else:
+        #             self.reward -= 3
+        #     else:
+        #         # Skipping even when it can sell
+        #         self.reward += -2
+
+        # else:
+        #     if self.action == "buy":
+        #         # Trying to buy already bought land
+        #         self.reward += -1
+        #     elif self.action == "give":
+        #         # Invalid action
+        #         self.reward += -1
+        #     else:
+        #         # Skipping correct action
+        #         self.reward += 0
 
         if self.check_monopoly(2):
             self.reward += 5
         else:
             self.reward += -1
+        
+        self.reward /= self.num_states
 
         return self.reward
 
@@ -328,12 +359,12 @@ class MonopolyEnv2(gym.Env):
 
     def take_action(self):
         if self.action == "buy":
-            self.board = self.current_player.buy(self.board)
+            self.board, self.invalid_action = self.current_player.buy(self.board)
 
         elif self.action == "give":
-            self.board = self.current_player.give(self.board)
+            self.board, self.invalid_action = self.current_player.give(self.board)
 
-        self.current_player.pay_rent(self.board)
+        self.invalid_action = self.invalid_action or self.current_player.pay_rent(self.board)
 
     def move_static_agent(self, static_agent):
         # roll = np.random.randint(low=1, high=3)
