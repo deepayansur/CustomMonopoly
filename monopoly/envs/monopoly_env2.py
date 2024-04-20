@@ -290,7 +290,7 @@ class MonopolyEnv2(gym.Env):
         '''
         self.reward = 0
         if self.invalid_action:
-            self.reward -= 10
+            self.reward -= 3
             self.invalid_action= False
         else:
             valid_actions = self.get_valid_actions()
@@ -298,7 +298,7 @@ class MonopolyEnv2(gym.Env):
                 if self.action != "skip":
                     self.reward += 3
             else:
-                self.reward -= 2
+                self.reward -= 10
         
         # if self.board[self.current_player.pos].owner is None:
         #     if self.action == "buy":
