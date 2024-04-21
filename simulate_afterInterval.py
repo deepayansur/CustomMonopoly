@@ -26,6 +26,12 @@ class MonopolyBoard(tk.Canvas):
         self.pass_data = []
         self.current_pass = 0
         self.circle_size = 10
+        self.current_player_list = []
+        self.roll_val_list = []
+        self.current_roll_val = 0
+        self.random_action = ""
+        self.random_action_list = []
+        self.appended_pos_list = []
         self.draw_board()
 
     def draw_board(self):
@@ -39,14 +45,12 @@ class MonopolyBoard(tk.Canvas):
                     self.create_rectangle(pos['x'] - 75, pos['y'] - 50, pos['x'] - 40, pos['y'] + 50, outline='black', width=2, fill=pos['color'], tags="city_color")
                     self.create_text(pos['x'] - 15, pos['y'], text=city, anchor='center', width= 70, angle= 90, tags="city_text")
                     self.create_text(pos['x'] + 50, pos['y'], text=pos['price'], anchor='center', width= 70, angle= 90, tags="price_text")
-                    self.kite_icon = tk.PhotoImage(file="kite.png")
-                    self.create_image(pos['x'] + 20, pos['y'], image=self.kite_icon, anchor=tk.CENTER)
+                    
                 if city in ['Virginia Avenue', 'States Avenue', 'St. Charles Place']:
                     self.create_rectangle(pos['x'] + 40, pos['y'] - 50, pos['x'] + 75, pos['y'] + 50, outline='black', width=2, fill=pos['color'], tags="city_color")
                     self.create_text(pos['x'] + 15, pos['y'], text=city, anchor='center', width= 70, angle=270, tags="city_text")
                     self.create_text(pos['x'] - 50, pos['y'], text=pos['price'], anchor='center', width= 70, angle= 270, tags="price_text")
-                    self.star_icon = tk.PhotoImage(file="star.png")
-                    self.create_image(pos['x'] - 20, pos['y'], image=self.star_icon, anchor=tk.CENTER)
+                    
             else:
                 self.create_rectangle(pos['x'] - 50, pos['y'] - 75, pos['x'] + 50, pos['y'] + 75, outline='black', width=2)
                 if city in ['St. James Place', 'Tennessee Avenue', 'New York Avenue']:
@@ -57,6 +61,10 @@ class MonopolyBoard(tk.Canvas):
                     self.create_rectangle(pos['x'] - 50, pos['y'] - 75, pos['x'] + 50, pos['y'] - 40, outline='black', width=2, fill=pos['color'], tags="city_color")
                     self.create_text(pos['x'], pos['y'] - 15, text=city, anchor='center', width= 70, tags="city_text")
                     self.create_text(pos['x'], pos['y'] + 50, text=pos['price'], anchor='center', width= 70, tags="price_text")
+        
+        self.create_text(640,350,text='Player', anchor = 'w')
+        self.create_text(640,380,text='Roll Value', anchor = 'w')
+        self.create_text(640,410,text='Action', anchor = 'w')
         self.update_pass()
 
     def create_star(self, x, y, size, **kwargs):
@@ -96,6 +104,11 @@ class MonopolyBoard(tk.Canvas):
     def update_pass(self):
         if self.current_pass < len(self.pass_data):
             self.delete("player_circle")
+            self.delete("player_num")
+            self.delete("roll_val")
+            self.delete("random_action")
+            self.delete("current_position1")
+            self.delete("current_position2")
             pass_data = self.pass_data[self.current_pass]
             print(pass_data)
             for city, player in pass_data:
@@ -117,12 +130,73 @@ class MonopolyBoard(tk.Canvas):
                     # self.create_oval(pos['x'] - self.circle_size, pos['y'] - self.circle_size + 25,
                     #                  pos['x'] + self.circle_size, pos['y'] + self.circle_size + 25,
                     #                  fill=self.players[player]['color'], tags="player_circle")
+            
+            current_player = self.current_player_list[self.current_pass]
+            self.create_text(710,350,text =current_player, anchor = 'w', tags = "player_num")
+            current_roll_val = self.roll_val_list[self.current_pass]
+            self.create_text(710,380,text =current_roll_val, anchor = 'w', tags = "roll_val")
+            random_action = self.random_action_list[self.current_pass]
+            self.create_text(710,410,text =random_action, anchor = 'w', tags = "random_action")
+            player1_city = list(self.cities.keys())[self.appended_pos_list[self.current_pass][0]]
+            player2_city  = list(self.cities.keys())[self.appended_pos_list[self.current_pass][1]]
+            player1_pos = self.cities[player1_city]
+            player2_pos = self.cities[player2_city]
+            print("PLAYER1 CITY",player1_city)
+            print("PLAYER2 CITY",player2_city)
+
+            # for city in pass_data:
+            if player1_city in ['Kentucky Avenue', 'Mediterranean Avenue', 'Baltic Avenue']:
+
+                self.kite_icon = tk.PhotoImage(file="kite.png")
+                self.create_image(player1_pos['x']-57, player1_pos['y'], image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+
+            elif player1_city in ['Virginia Avenue', 'States Avenue', 'St. Charles Place']:
+
+                self.kite_icon = tk.PhotoImage(file="kite.png")
+                self.create_image(player1_pos['x']+57, player1_pos['y'], image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+            
+            elif player1_city in ['Connecticut Avenue', 'Vermont Avenue', 'Orient Avenue']:
+
+                self.kite_icon = tk.PhotoImage(file="kite.png")
+                self.create_image(player1_pos['x'], player1_pos['y']-57, image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+
+            else:
+
+                self.kite_icon = tk.PhotoImage(file="kite.png")
+                self.create_image(player1_pos['x'], player1_pos['y']+57, image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+
+
+            if player2_city in ['Kentucky Avenue', 'Mediterranean Avenue', 'Baltic Avenue']:
+                
+                self.star_icon = tk.PhotoImage(file="star.png")
+                self.create_image(player2_pos['x']-57, player2_pos['y'], image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+
+            elif player2_city in ['Virginia Avenue', 'States Avenue', 'St. Charles Place']:
+
+                self.star_icon = tk.PhotoImage(file="star.png")
+                self.create_image(player2_pos['x']+57, player2_pos['y'], image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+            
+            elif player2_city in ['Connecticut Avenue', 'Vermont Avenue', 'Orient Avenue']:
+
+                self.star_icon = tk.PhotoImage(file="star.png")
+                self.create_image(player2_pos['x'], player2_pos['y']-57, image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+
+            else:
+
+                self.star_icon = tk.PhotoImage(file="star.png")
+                self.create_image(player2_pos['x'], player2_pos['y']+57, image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+
             self.current_pass += 1
             print(self.current_pass)
-            self.after(250, self.update_pass)
+            self.after(2500, self.update_pass)
 
     def reset(self):
         self.delete("player_circle")
+        self.delete("player_num")
+        self.delete("roll_val")
+        self.delete("random_action")
+        self.delete("current_position1")
+        self.delete("current_position2")
         self.current_pass = 0
 
 def main():
@@ -152,10 +226,35 @@ def main():
     reset_button.pack()
     reset_button.place(x=605, y=710)
     appending_data=[]
+    current_player_list = []
+    roll_val_list = []
+    current_player = 0
+    current_roll_val = 0
+    random_action = ""
+    random_action_list = []
+    position_list = []
+    appended_pos_list = []
     with open("ownership_data.txt", 'r') as file:
         for line in file:
             data_list = eval(line.strip())
             appending_data.append(data_list)
+            line = file.readline()
+            current_player = eval(line.strip())
+            # print(current_player)
+            current_player_list.append(current_player)
+
+            line = file.readline()
+            current_roll_val = eval(line.strip())
+            roll_val_list.append(current_roll_val)
+
+            line = file.readline()
+            random_action = line.strip()
+            random_action_list.append(random_action)
+
+            line = file.readline()
+            position_list = eval(line.strip())
+            # print(position_list)
+            appended_pos_list.append(position_list)
     # print(appending_data)
     print("TOTAL PASSES:")
     print(len(appending_data))
@@ -168,6 +267,10 @@ def main():
 # ]
     #Real data
     board.pass_data = appending_data
+    board.current_player_list = current_player_list
+    board.roll_val_list = roll_val_list
+    board.random_action_list = random_action_list
+    board.appended_pos_list = appended_pos_list
 
     root.mainloop()
 
