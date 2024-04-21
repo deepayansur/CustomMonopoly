@@ -3,7 +3,7 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
-env = MonopolyEnv2(4, 3, 2, 200)
+env = MonopolyEnv2(12, 6, 2, 200)
 
 ######################### RUN THIS TO CHECK ENV #######################
 
@@ -54,7 +54,7 @@ for episode in range(episodes):
         with open(file_path, 'a') as file:
             file.write(str(owner_tuple)+"\n")
                 
-        file_path = "output_data.txt"
+        # file_path = "output_data.txt"
 
         print("Data has been written to file")
         if trunc:

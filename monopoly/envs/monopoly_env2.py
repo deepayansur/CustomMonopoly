@@ -28,11 +28,11 @@ class Player:
     def buy(self, board):
         city = board[self.pos]
         if int(city.owner) != 0:
-            print(f"City is already owned by {city.owner}")
+            # print(f"City is already owned by {city.owner}")
             return board
 
         if city.price > self.money:
-            print(f"Insufficient money")
+            # print(f"Insufficient money")
             return board
 
         self.possession_indices.append(self.pos)
@@ -44,7 +44,7 @@ class Player:
     def give(self, board):
 
         if self.pos not in self.possession_indices:
-            print(f"City not owned by current player")
+            # print(f"City not owned by current player")
             return board
 
         self.possession_indices.remove(self.pos)
