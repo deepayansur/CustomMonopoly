@@ -12,7 +12,7 @@ if not os.path.exists(models_dir):
 if not os.path.exists(logdir):
     os.makedirs(logdir)
 
-env = MonopolyEnv2(8, 6, 2, 200)
+env = MonopolyEnv2(5, 6, 2, 1000)
 env.reset()
 
 model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=logdir)

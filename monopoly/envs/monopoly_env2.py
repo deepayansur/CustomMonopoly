@@ -9,11 +9,11 @@ import pandas as pd
 # import pandas as pd
 # import matplotlib.pyplot as plt
 class Player:
-    def __init__(self, num, ally_num, tag="player1", static=False):
+    def __init__(self, num, tag="player1", static=False):
         self.tag = tag
         self.pos = 0
         self.num = num
-        self.ally_num = ally_num
+        self.ally_num = None
         self.prev_pos = []
         self.possession_indices = []
         self.isStatic = static
@@ -27,16 +27,16 @@ class Player:
 
     def buy(self, board):
         city = board[self.pos]
-        if int(city.owner) != 0:
-            # print(f"City is already owned by {city.owner}")
+        if city.owner is not None:
+            print(f"City is already owned by {city.owner.num}")
             return board
 
         if city.price > self.money:
-            # print(f"Insufficient money")
+            print(f"Insufficient money")
             return board
 
         self.possession_indices.append(self.pos)
-        board[self.pos].owner = self.num
+        board[self.pos].owner = self
         self.money -= city.price
 
         return board
@@ -44,11 +44,12 @@ class Player:
     def give(self, board):
 
         if self.pos not in self.possession_indices:
-            # print(f"City not owned by current player")
+            print(f"City not owned by current player")
             return board
 
         self.possession_indices.remove(self.pos)
-        board[self.pos].owner = self.ally_num
+        # board[self.pos].owner = self.ally_num
+        board[self.pos].owner = self.ally
         return board
 
     def mortgage(self, board, cities):
@@ -63,20 +64,23 @@ class Player:
 
         return board
 
-    def pay_rent(self, board, cities):
-        city = cities[self.pos]
-        if city.owner == 0:
+    def pay_rent(self, board):
+        city = board[self.pos]
+        if city.owner is None:
             return
 
-        self.money -= city.rents_array[city.num_houses]
-        city.owner.money += city.rents_array[city.num_houses]
+        rent = city.rents_array[city.num_houses]
+        self.money -= rent
+        city.owner.money += rent
 
+    def assign_ally(self, ally):
+        self.ally = ally
 
 
 class City:
     price_per_house = 5  # common for all houses
     def __init__(self, name, color, price, price_per_house, rent, rent_1_house, rent_2_house,
-                 rent_3_house, rent_4_house, rent_hotel, mortgage, owner=0, num_houses=0, is_mortgaged=False):
+                 rent_3_house, rent_4_house, rent_hotel, mortgage, owner=None, num_houses=0, is_mortgaged=False):
         self.name = name
         self.color = color
         self.owner = owner
@@ -106,15 +110,21 @@ class MonopolyEnv2(gym.Env):
         self.done = False
         self.truncated = False
         self.dice_size = dice_size
+        self.file = file
         self.episode_length = 0
         # self.no_operation = False
-        self.players = [Player(1, 2, "player1", False), Player(2, 1, "player2")]
-        self.file = file
         self.roll_val = 0
-        self.current_player_index = 1
         self.current_pos = 0
         self.current_pos_owner = 0
+
+        self.players = [Player(1, "player1", False), Player(2, "player2")]
+        self.current_player_index = 1
         self.current_player = self.players[self.current_player_index]
+
+        # TODO: Better way of doing this
+        self.players[0].assign_ally(self.players[1])
+        self.players[1].assign_ally(self.players[0])
+
         self.player_init_money = 1500
         self.num_states = num_states
         self.num_agents = num_agents
@@ -148,7 +158,10 @@ class MonopolyEnv2(gym.Env):
         # self.x = 0
         self.board = np.array(self.create_board(), dtype=City)
 
-        self.players = [Player(1, 2, "player1"), Player(2, 1, "player2")]
+        self.players = [Player(1, "player1", False), Player(2, "player2")]
+
+        self.players[0].assign_ally(self.players[1])
+        self.players[1].assign_ally(self.players[0])
         # for i in range(num_agents):
         #     players.append(Player(i+1, f"player{i+1}"))
         # players[0] = Player(1, 2, "player1")
@@ -160,7 +173,7 @@ class MonopolyEnv2(gym.Env):
         self.current_player = self.players[self.current_player_index]
 
         self.current_pos = 0
-        self.current_pos_owner = self.board[self.current_pos].owner
+        self.current_pos_owner = self.get_owner()
 
         # self.learnable_agents = self.players[1:]
         # self.static_agents = self.players[1:]
@@ -173,6 +186,12 @@ class MonopolyEnv2(gym.Env):
 
         return observation, {}
 
+    def get_owner(self):
+        city = self.board[self.current_pos]
+        if city.owner != None:
+            return city.owner
+        return None
+
     def action_space(self):
         return self.action_space
 
@@ -183,16 +202,24 @@ class MonopolyEnv2(gym.Env):
         """
         ownership = np.zeros(self.num_agents, dtype=np.float64)
         # We know the ownership of "agent 0"=Total_states - addition of all agents possessions
-
+        # city = self.board[self.current_pos]
         for city in self.board:
-            if city.owner != 0:
-                ownership[city.owner-1] += 1
+            if city.owner != None:
+                ownership[city.owner.num-1] += 1
 
         # print("ownership:" , ownership)
 
         # observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner,
         #                         self.current_player.money], dtype=np.float64)
-        observation = np.array([self.current_player.num, self.current_pos, self.current_pos_owner,],
+        # Potential solution Normalize all observations to 0 and 1 for NN
+        # Should we send city property? - Experiment and try. If the model doesn't converge,
+        # then include all the possible info necessary for decision making
+        # Maptlotlib visualization/rendering for monopoly.
+        if self.current_pos_owner is not None:
+            owner = self.current_pos_owner.num
+        else:
+            owner = 0
+        observation = np.array([self.current_player.num, self.current_pos, owner],
                                dtype=np.float64)
 
         # print("observation:", observation)
@@ -212,7 +239,7 @@ class MonopolyEnv2(gym.Env):
         self.roll()
         self.update_position_roll()
         self.current_pos = self.current_player.pos
-        self.current_pos_owner = self.board[self.current_pos].owner
+        self.current_pos_owner = self.get_owner()
 
         observation = self.getObservation()
 
@@ -220,19 +247,6 @@ class MonopolyEnv2(gym.Env):
         self.reward = self.get_reward()
         self.take_action()
         self.episode_length += 1
-
-        if self.episode_length >= self.max_turns:
-            self.done = True
-
-        # for static_agent in self.static_agents:
-        #     self.move_static_agent(static_agent)
-
-        # self.roll()
-        # # self.current_pos = (self.current_pos + self.roll_val) % self.num_states
-        # self.update_position_roll()
-        # self.current_pos = self.current_player.pos
-        # self.current_pos_owner = self.board[self.current_pos]
-
 
         if self.episode_length >= self.max_turns:
             self.done = False
@@ -257,7 +271,7 @@ class MonopolyEnv2(gym.Env):
         Input argument.
         '''
         self.reward = 0
-        if self.board[self.current_player.pos].owner == 0:
+        if self.board[self.current_player.pos].owner is None:
             if self.action == "buy":
                 self.reward += 1
             elif self.action == "give":
@@ -267,7 +281,7 @@ class MonopolyEnv2(gym.Env):
                 # Skipping even when it can buy
                 self.reward += -2
 
-        elif self.board[self.current_player.pos].owner == 1:
+        elif self.board[self.current_player.pos].owner.num == 1:
             if self.action == "buy":
                 # Trying to buy already bought land
                 self.reward += -1
@@ -303,8 +317,11 @@ class MonopolyEnv2(gym.Env):
     def check_monopoly(self, player_num):
         count = 0
         for city in self.board:
-            if city.owner == player_num:
-                count += 1
+            if city.owner is not None:
+                if city.owner.num == player_num:
+                    count += 1
+                else:
+                    return False
             else:
                 return False
         return True
@@ -312,21 +329,11 @@ class MonopolyEnv2(gym.Env):
     def take_action(self):
         if self.action == "buy":
             self.board = self.current_player.buy(self.board)
-            # if int(self.board[self.current_player.pos].owner) == 0:
-            #     self.board[self.current_player.pos].owner = self.current_player.num
-
-            # else:
-            #     print(str(self.board[self.current_player.pos]) + " already owned by different player, cant BUY")
 
         elif self.action == "give":
             self.board = self.current_player.give(self.board)
 
-            # if int(self.board[self.current_player.pos].owner) == self.current_player.num:
-            #     self.board[self.current_player.pos].owner = self.current_player.ally_num
-            # else:
-            #     print(str(self.board[self.current_player.pos]) + " is not owned by current player, cant GIVE")
-
-        # return [self.current_player.pos, self.board]
+        self.current_player.pay_rent(self.board)
 
     def move_static_agent(self, static_agent):
         # roll = np.random.randint(low=1, high=3)
