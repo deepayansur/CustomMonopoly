@@ -1,1000 +1,1000 @@
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 0)]
+[('Oriental Avenue', 0), ('Vermont Avenue', 0), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 0)]
 1
-2
+5
 buy
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 0)]
+[5, 0]
+[('Oriental Avenue', 0), ('Vermont Avenue', 0), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 0)]
 2
-2
-skip
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 0)]
+4
+give
+[5, 4]
+[('Oriental Avenue', 0), ('Vermont Avenue', 0), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 0)]
 1
 2
 give
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 0)]
+[7, 4]
+[('Oriental Avenue', 0), ('Vermont Avenue', 0), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 0)]
 2
-2
-skip
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 0)]
-1
-2
-buy
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 0)]
-2
-1
+3
 give
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
+[7, 7]
+[('Oriental Avenue', 0), ('Vermont Avenue', 0), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 1
-1
+4
 buy
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
+[11, 7]
+[('Oriental Avenue', 0), ('Vermont Avenue', 0), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
-1
-buy
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 0), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
+4
 skip
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[3, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-skip
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-give
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-buy
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
+[11, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 0), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 1
 1
 buy
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
+[0, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
-2
-skip
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-give
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 2), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-give
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-skip
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-skip
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-skip
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-give
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-give
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-buy
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-skip
-[3, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-skip
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-give
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-skip
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-give
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-skip
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-give
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-skip
-[3, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-skip
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-skip
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-give
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-skip
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 0), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-give
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-skip
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-skip
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 1), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-give
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-skip
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-give
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
 2
 buy
 [0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 0), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 1
-skip
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-skip
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-skip
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-skip
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-buy
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-1
-buy
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-skip
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-give
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-skip
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 2), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-buy
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-2
-give
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-skip
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-1
-1
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 2)]
-2
-2
-give
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
+3
 give
 [3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-skip
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-skip
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
 1
 buy
 [3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 0), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 1
 2
 buy
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[5, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
+2
+2
+buy
+[5, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 0), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
+1
+1
+give
+[6, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
+2
+4
+buy
+[6, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
+1
+2
+give
+[8, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
+2
+2
+give
+[8, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
+1
+5
+give
+[1, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
 1
 skip
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[1, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 1), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 1
-2
-buy
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+3
+skip
+[4, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
 2
 give
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[4, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 1
-1
-give
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+3
+skip
+[7, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
 2
 skip
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-give
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-buy
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-give
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-buy
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-give
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-give
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-skip
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-give
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-skip
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[7, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 1
 2
 skip
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[9, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
+4
+skip
+[9, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
+1
 1
 give
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
+[10, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 2)]
 2
+5
+skip
+[10, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 1)]
+1
+1
 give
-[0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[11, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 1)]
 2
-1
+5
 buy
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[11, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 1)]
 1
-1
-give
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
+5
 buy
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[4, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 1)]
+2
+2
+give
+[4, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 0), ('Baltic Avenue', 1)]
 1
 1
 skip
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[5, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+3
+buy
+[5, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+give
+[9, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+2
+buy
+[9, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
 1
 skip
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
+[10, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+4
 skip
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-give
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[10, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
-2
-buy
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
+4
 give
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[2, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 0), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+give
+[2, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
 1
 buy
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[3, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 0), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
-1
-give
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-give
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-buy
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
+5
 skip
 [3, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+buy
+[6, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+2
+skip
+[6, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+skip
+[8, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+2
+buy
+[8, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+skip
+[0, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+give
+[0, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+skip
+[2, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 2), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+skip
+[2, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+give
+[6, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+buy
+[6, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+buy
+[10, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 2), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+buy
+[10, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+give
+[3, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+buy
+[3, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 0), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+buy
+[5, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+buy
+[5, 9]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+skip
+[7, 9]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+skip
+[7, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+buy
+[11, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+skip
+[11, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+buy
+[1, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+skip
+[1, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 1), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+buy
+[3, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+give
+[3, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 0), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+buy
+[4, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+buy
+[4, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+give
+[6, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+skip
+[6, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+give
+[9, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+buy
+[9, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+skip
+[2, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+skip
+[2, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+buy
+[5, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+buy
+[5, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+buy
+[6, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+give
+[6, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+give
+[11, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+skip
+[11, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+give
+[2, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+skip
+[2, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
 1
 give
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[3, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+buy
+[3, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+give
+[8, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+skip
+[8, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+give
+[11, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+buy
+[11, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
 2
-buy
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+give
+[1, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
-2
-buy
+3
+give
 [1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+skip
+[6, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+skip
+[6, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
 1
 give
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[7, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+2
+skip
+[7, 9]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+skip
+[11, 9]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+2
+give
+[11, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+buy
+[4, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+buy
+[4, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+give
+[6, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+skip
+[6, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+buy
+[9, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+skip
+[9, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+buy
+[10, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+skip
+[10, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+skip
+[1, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+buy
+[1, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+give
+[2, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+buy
+[2, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+skip
+[5, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
 1
 skip
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[5, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+give
+[6, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+buy
+[6, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
 1
 buy
-[3, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[7, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+buy
+[7, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+give
+[11, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+2
+skip
+[11, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+skip
+[1, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+give
+[1, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+skip
+[2, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+3
+buy
+[2, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+buy
+[4, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
 1
 buy
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[4, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
+4
+give
+[8, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+buy
+[8, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
+4
+buy
+[0, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+buy
+[0, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+buy
+[4, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+2
+give
+[4, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+buy
+[8, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+buy
+[8, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+buy
+[11, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+buy
+[11, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+give
+[3, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+buy
+[3, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+4
+give
+[7, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+skip
+[7, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
 skip
 [0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+4
+give
+[0, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
+4
 buy
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[4, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
 2
-skip
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+buy
+[4, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
-1
+5
 give
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[9, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
-2
-give
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
+4
 skip
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[9, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+skip
+[0, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 2), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
-2
+1
 skip
 [0, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
+5
+give
+[5, 0]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+2
+give
+[5, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
 skip
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[6, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+5
+skip
+[6, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+give
+[9, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+3
+skip
+[9, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+give
+[2, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
 skip
 [2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
-1
-skip
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[3, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-give
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-buy
-[1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-skip
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-skip
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-skip
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-skip
-[3, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-give
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[0, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-skip
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-skip
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-skip
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-buy
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-2
-skip
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-skip
-[3, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
 1
 give
 [3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+5
+skip
+[3, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+skip
+[8, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
 give
-[1, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
-buy
-[1, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[8, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
-1
-buy
-[2, 0]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-2
+5
 give
-[2, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-buy
-[3, 2]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
-1
-give
-[3, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
-buy
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[1, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
 2
-give
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
-1
 give
 [1, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+5
+skip
+[6, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+5
+buy
+[6, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+buy
+[7, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 2
+1
+buy
+[7, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 1), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+buy
+[9, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
 give
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[9, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
-1
-buy
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-2
 2
 buy
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[11, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+5
+give
+[11, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+1
+skip
+[0, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+4
+give
+[0, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
 1
 2
 skip
+[2, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+skip
+[2, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+2
+skip
+[4, 6]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+2
+1
+buy
+[4, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 1), ('Baltic Avenue', 1)]
+1
+3
+buy
+[7, 7]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+3
+give
+[7, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+3
+skip
+[10, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+4
+buy
+[10, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+5
+buy
+[3, 2]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+3
+buy
+[3, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+3
+skip
+[6, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+4
+skip
+[6, 9]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+4
+skip
+[10, 9]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+4
+give
+[10, 1]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+2
+buy
 [0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 2
 2
 give
 [0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+3
+buy
+[3, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+5
+buy
+[3, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+3
+buy
+[6, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+2
+buy
+[6, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+3
+skip
+[9, 10]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+2
+1
+give
+[9, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 1
 2
-skip
-[2, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+give
+[11, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 2
-2
-skip
-[2, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+4
+give
+[11, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 1
+4
+give
+[3, 3]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 2
+1
+buy
+[3, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+5
 skip
-[0, 1]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+[8, 4]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 2
+1
+buy
+[8, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+3
+buy
+[11, 5]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 2
-skip
-[0, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
+3
+give
+[11, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 1
 1
 skip
-[1, 3]
-[('Mediterranean Avenue/Old Kent Rd', 2), ('Baltic Avenue/Whitechapel Rd', 1), ('Oriental Avenue/The Angel, Islington', 1), ('Vermont Avenue/Euston Rd', 1)]
-1
+[0, 8]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
 2
+3
+give
+[0, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+1
+buy
+[1, 11]
+[('Oriental Avenue', 2), ('Vermont Avenue', 2), ('Connecticut Avenue', 2), ('St. Charles Place', 1), ('States Avenue', 1), ('Virginia Avenue', 1), ('St. James Place', 1), ('Tennessee Avenue', 1), ('New York Avenue', 2), ('Kentucky Avenue', 1), ('Mediterranean Avenue', 2), ('Baltic Avenue', 1)]
+1
+3
 skip
-[1, 3]
+[2, 11]
