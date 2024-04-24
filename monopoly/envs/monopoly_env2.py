@@ -28,11 +28,11 @@ class Player:
     def buy(self, board):
         city = board[self.pos]
         if city.owner is not None:
-            # print(f"City is already owned by {city.owner.num}")
+            print(f"City is already owned by {city.owner.num}")
             return board
 
         if city.price > self.money:
-            # print(f"Insufficient money")
+            print(f"Insufficient money")
             return board
 
         self.possession_indices.append(self.pos)
@@ -44,7 +44,7 @@ class Player:
     def give(self, board):
 
         if self.pos not in self.possession_indices:
-            # print(f"City not owned by current player")
+            print(f"City not owned by current player")
             return board
 
         self.possession_indices.remove(self.pos)
@@ -60,8 +60,7 @@ class Player:
         if city.num_houses == 0:
             city.is_mortgaged = True
         else:
-            pass
-            # print(f"Handle the condition where mortgage was selected, but city has houses")
+            print(f"Handle the condition where mortgage was selected, but city has houses")
 
         return board
 
@@ -137,9 +136,6 @@ class MonopolyEnv2(gym.Env):
         #                                     shape=(dim,), dtype=np.float64)
         dim = 3 + self.num_agents
         self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size),
-                                            # shape=(dim,), dtype=np.float64)
-        # dim = 5
-        # self.observation_space = spaces.Box(low=0, high=4,
                                             shape=(dim,), dtype=np.float64)
         self.roll()
 
