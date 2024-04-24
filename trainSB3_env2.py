@@ -3,8 +3,8 @@ import os
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 import time
 
-num_states = 8
-max_turns = 2000
+num_states = 4
+max_turns = 200
 
 models_dir = f"models/{int(time.time())}/"
 logdir = f"logs/{int(time.time())}/{num_states}_{max_turns}/"
