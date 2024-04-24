@@ -28,7 +28,7 @@ class Player:
     def buy(self, board):
         city = board[self.pos]
         if city.owner is not None:
-            print(f"City is already owned by {city.owner.num}")
+            # print(f"City is already owned by {city.owner.num}")
             return board, True
 
         if city.price > self.money:
@@ -44,7 +44,7 @@ class Player:
     def give(self, board):
 
         if self.pos not in self.possession_indices:
-            print(f"City not owned by current player")
+            # print(f"City not owned by current player")
             return board, True
 
         self.possession_indices.remove(self.pos)
@@ -276,7 +276,7 @@ class MonopolyEnv2(gym.Env):
     def get_valid_actions(self):
         valid_actions = []
         if self.board[self.current_player.pos].owner is None:
-            valid_actions=["skip", "buy"]
+            valid_actions=["buy"]
         elif self.board[self.current_player.pos].owner.num == 1 and self.current_player.num == 1:
             valid_actions=["give"]
         else:
@@ -289,17 +289,25 @@ class MonopolyEnv2(gym.Env):
         Input argument.
         '''
         self.reward = 0
-        if self.invalid_action:
-            self.reward -= 3
-            self.invalid_action= False
-        else:
-            valid_actions = self.get_valid_actions()
-            if self.action in valid_actions:
-                if self.action != "skip":
-                    self.reward += 3
-            else:
-                self.reward -= 10
+        # if self.invalid_action:
+        #     self.reward -= 10
+        #     self.invalid_action= False
+        # else:
+        valid_actions = self.get_valid_actions()
+        if self.action in valid_actions:
+            self.reward += 10
+        else: #invalid actions
+            self.reward -= 15
+
+        current_owner = self.board[self.current_player.pos].owner
+        if current_owner and current_owner.num != self.current_player.num:
+            self.reward -=1
         
+        if self.episode_length%100 in [0,1,2] and self.current_player.num == 2:
+            self.reward += len(self.current_player.possession_indices)
+            #SHOULD ADD +ve FOR MORE PLOTS IN EACH COLOR
+            
+
         # if self.board[self.current_player.pos].owner is None:
         #     if self.action == "buy":
         #         self.reward += 1
@@ -337,11 +345,11 @@ class MonopolyEnv2(gym.Env):
         #         self.reward += 0
 
         if self.check_monopoly(2):
-            self.reward += 5
+            self.reward += 10
         else:
             self.reward += -1
         
-        self.reward /= self.num_states
+        # self.reward /= self.num_states
 
         return self.reward
 
