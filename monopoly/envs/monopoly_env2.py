@@ -135,8 +135,11 @@ class MonopolyEnv2(gym.Env):
         # dim = 4 + self.num_agents  # 4 = agent_nos,cur_pos,cur_pos_owner,money
         # self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size, self.player_init_money),
         #                                     shape=(dim,), dtype=np.float64)
-        dim = 5
-        self.observation_space = spaces.Box(low=0, high=4,
+        dim = 3 + self.num_agents
+        self.observation_space = spaces.Box(low=0, high=max(num_states, num_agents, dice_size),
+                                            # shape=(dim,), dtype=np.float64)
+        # dim = 5
+        # self.observation_space = spaces.Box(low=0, high=4,
                                             shape=(dim,), dtype=np.float64)
         self.roll()
 

@@ -200,7 +200,7 @@ class MonopolyBoard(tk.Canvas):
 
             self.current_pass += 1
             print(self.current_pass)
-            self.after(2500, self.update_pass)
+            self.after(150, self.update_pass)
 
     def reset(self):
         self.delete("player_circle")
