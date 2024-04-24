@@ -3,8 +3,11 @@ import os
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 import time
 
+num_states = 8
+max_turns = 2000
+
 models_dir = f"models/{int(time.time())}/"
-logdir = f"logs/{int(time.time())}/"
+logdir = f"logs/{int(time.time())}/{num_states}_{max_turns}/"
 
 if not os.path.exists(models_dir):
     os.makedirs(models_dir)
@@ -12,10 +15,10 @@ if not os.path.exists(models_dir):
 if not os.path.exists(logdir):
     os.makedirs(logdir)
 
-env = MonopolyEnv2(5, 6, 2, 1000)
+env = MonopolyEnv2(num_states, 6, 2, max_turns)
 env.reset()
 
-model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=logdir)
+model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=logdir, device="cuda")
 
 TIMESTEPS = 10000
 iters = 0
