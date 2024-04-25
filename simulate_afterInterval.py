@@ -6,15 +6,19 @@ class MonopolyBoard(tk.Canvas):
         super().__init__(master, *args, **kwargs)
         self.master = master
         self.cities = {
+            # 'Start': {'x': 865,'y': 575},
             'Oriental Avenue': {'x': 740, 'y': 575, 'color': 'cyan', 'price': '$100'},
             'Vermont Avenue': {'x': 640, 'y': 575, 'color': 'cyan', 'price': '$100'},
             'Connecticut Avenue': {'x': 540, 'y': 575, 'color': 'cyan', 'price': '$120'},
+            # 'Jail': {'x': 415,'y': 575},
             'St. Charles Place': {'x': 415, 'y': 450, 'color': '#D73E78', 'price': '$140'},
             'States Avenue': {'x': 415, 'y': 350, 'color': '#D73E78', 'price': '$140'},
             'Virginia Avenue': {'x': 415, 'y': 250, 'color': '#D73E78', 'price': '$160'},
+            # 'Free parking': {'x': 415,'y': 125},
             'St. James Place': {'x': 540, 'y': 125, 'color': 'orange', 'price': '$180'},
             'Tennessee Avenue': {'x': 640, 'y': 125, 'color': 'orange', 'price': '$180'},
             'New York Avenue': {'x': 740, 'y': 125, 'color': 'orange', 'price': '$200'},
+            # 'Go to jail': {'x': 865,'y': 125},
             'Kentucky Avenue': {'x': 865, 'y': 250, 'color': 'red', 'price': '$220'},
             'Mediterranean Avenue': {'x': 865, 'y': 350, 'color': 'brown', 'price': '$60'},
             'Baltic Avenue': {'x': 865, 'y': 450, 'color': 'brown', 'price': '$60'},
@@ -39,6 +43,9 @@ class MonopolyBoard(tk.Canvas):
     def draw_board(self):
         self.create_rectangle(340, 50, 940, 650, outline='black', width=2)
         for city, pos in self.cities.items():
+            # if city in ['Start', 'Jail', 'Free parking', 'Go to jail']:
+                # self.create_rectangle(pos['x'] - 75, pos['y'] - 75, pos['x'] + 75, pos['y'] + 75, outline='black', width=2)
+
             if city in ['Kentucky Avenue', 'Mediterranean Avenue', 'Baltic Avenue',
                     'Virginia Avenue', 'States Avenue', 'St. Charles Place']:
                 self.create_rectangle(pos['x'] - 75, pos['y'] - 50, pos['x'] + 75, pos['y'] + 50, outline='black', width=2)
@@ -64,16 +71,31 @@ class MonopolyBoard(tk.Canvas):
                     self.create_text(pos['x'], pos['y'] - 15, text=city, anchor='center', width= 70, tags="city_text")
                     self.create_text(pos['x'], pos['y'] + 50, text=pos['price'], anchor='center', width= 70, tags="price_text")
         
-        self.create_text(600,350,text='Player', anchor = 'w')
-        self.create_text(600,380,text='Roll Value', anchor = 'w')
-        self.create_text(600,410,text='Action', anchor = 'w')
+        my_font = font.Font(size=8)
+        bold_font = font.Font(size=8, weight='bold')
+        self.create_text(580,350,text='PLAYER          :', anchor = 'w', font=bold_font)
+        self.create_text(580,380,text='ROLL VALUE :', anchor = 'w', font=bold_font)
+        self.create_text(580,410,text='ACTION          :', anchor = 'w', font=bold_font)
 
-        self.create_text(830,540, text='   COLLECT \n$200 SALARY\nAS YOU PASS', anchor='center', angle= 45)
-        my_font = font.Font(family="Kabel", size=45, weight="bold")
-        self.create_text(870,570, text='GO', font=my_font, angle=45)
-
-        self.arrow_icon = tk.PhotoImage(file="arrow.png")
-        self.create_image(866, 620, image=self.arrow_icon, anchor=tk.CENTER, tags="arrow")
+        self.create_text(825,535, text='   COLLECT \n$200 SALARY\nAS YOU PASS', anchor='center', angle= 45, font=my_font)
+        self.create_text(460,170, text='FREE', anchor='center', angle= 225, font=my_font)
+        self.create_text(379,80, text='PARKING', anchor='center', angle= 225, font=my_font)
+        self.create_text(830,173, text='GO TO', anchor='center', angle= 135, font=my_font)
+        self.create_text(910,88, text='JAIL', anchor='center', angle= 135, font=my_font)
+        self.create_text(365,555, text='JUST', anchor='center', angle= 270, font=my_font)
+        self.create_text(435,625, text='VISITING', anchor='center', font=my_font)
+        
+        # self.create_text(870,570, text='GO', font=my_font, angle=45)
+        self.monopoly = tk.PhotoImage(file="monopoly.png")
+        self.create_image(640, 280, image=self.monopoly, anchor=tk.CENTER, tags="logo")
+        self.go_icon = tk.PhotoImage(file="go.png")
+        self.create_image(866, 580, image=self.go_icon, anchor=tk.CENTER, tags="go")
+        self.jail_icon = tk.PhotoImage(file="jail.png")
+        self.create_image(438, 553, image=self.jail_icon, anchor=tk.CENTER, tags="jail")
+        self.parking_icon = tk.PhotoImage(file="parking.png")
+        self.create_image(415, 125, image=self.parking_icon, anchor=tk.CENTER, tags="parking")
+        self.gotojail_icon = tk.PhotoImage(file="gotojail.png")
+        self.create_image(865, 125, image=self.gotojail_icon, anchor=tk.CENTER, tags="gotojail")
         self.kite_icon = tk.PhotoImage(file="kite.png")
         self.create_image(855, 560, image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
         self.star_icon = tk.PhotoImage(file="star.png")
@@ -146,11 +168,11 @@ class MonopolyBoard(tk.Canvas):
                     #                  fill=self.players[player]['color'], tags="player_circle")
             
             current_player = self.current_player_list[self.current_pass]
-            self.create_text(710,350,text =current_player, anchor = 'w', tags = "player_num")
+            self.create_text(680,350,text =current_player, anchor = 'w', tags = "player_num")
             current_roll_val = self.roll_val_list[self.current_pass]
-            self.create_text(710,380,text =current_roll_val, anchor = 'w', tags = "roll_val")
+            self.create_text(680,380,text =current_roll_val, anchor = 'w', tags = "roll_val")
             random_action = self.random_action_list[self.current_pass]
-            self.create_text(710,410,text =random_action, anchor = 'w', tags = "random_action")
+            self.create_text(680,410,text =random_action, anchor = 'w', tags = "random_action")
             player1_city = list(self.cities.keys())[self.appended_pos_list[self.current_pass][0]]
             player2_city  = list(self.cities.keys())[self.appended_pos_list[self.current_pass][1]]
             player1_pos = self.cities[player1_city]
