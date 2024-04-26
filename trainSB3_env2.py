@@ -3,8 +3,8 @@ import os
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 import time
 
-models_dir = f"models/{int(time.time())}/"
-logdir = f"logs/{int(time.time())}/"
+models_dir = f"models/{int(time.time())}/1000_plotdiff/"
+logdir = f"logs/{int(time.time())}/1000_plotdiff/"
 
 if not os.path.exists(models_dir):
     os.makedirs(models_dir)
@@ -12,7 +12,7 @@ if not os.path.exists(models_dir):
 if not os.path.exists(logdir):
     os.makedirs(logdir)
 
-env = MonopolyEnv2(5, 6, 2, 1000)
+env = MonopolyEnv2(8, 6, 2, 1000)
 env.reset()
 
 model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=logdir)
