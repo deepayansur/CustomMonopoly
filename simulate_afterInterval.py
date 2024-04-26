@@ -96,10 +96,10 @@ class MonopolyBoard(tk.Canvas):
         self.create_image(415, 125, image=self.parking_icon, anchor=tk.CENTER, tags="parking")
         self.gotojail_icon = tk.PhotoImage(file="gotojail.png")
         self.create_image(865, 125, image=self.gotojail_icon, anchor=tk.CENTER, tags="gotojail")
-        self.kite_icon = tk.PhotoImage(file="kite.png")
-        self.create_image(855, 560, image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
-        self.star_icon = tk.PhotoImage(file="star.png")
-        self.create_image(855, 590, image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+        self.kite1_icon = tk.PhotoImage(file="kite1.png")
+        self.create_image(855, 560, image=self.kite1_icon, anchor=tk.CENTER, tags="current_position1")
+        self.star1_icon = tk.PhotoImage(file="star1.png")
+        self.create_image(855, 590, image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
 
         self.update_pass()
 
@@ -181,44 +181,44 @@ class MonopolyBoard(tk.Canvas):
             print("PLAYER2 CITY",player2_city)
 
 
-            # self.kite_icon = tk.PhotoImage(file="kite.png")
-            # self.create_image(player1_pos['x'], player1_pos['y'], image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
-            # self.star_icon = tk.PhotoImage(file="star.png")
-            # self.create_image(player2_pos['x'], player2_pos['y'], image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+            # self.kite1_icon = tk.PhotoImage(file="kite1.png")
+            # self.create_image(player1_pos['x'], player1_pos['y'], image=self.kite1_icon, anchor=tk.CENTER, tags="current_position1")
+            # self.star1_icon = tk.PhotoImage(file="star1.png")
+            # self.create_image(player2_pos['x'], player2_pos['y'], image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
 
             # for city in pass_data:
             if player1_city in ['Kentucky Avenue', 'Mediterranean Avenue', 'Baltic Avenue']:
-                self.kite_icon = tk.PhotoImage(file="kite.png")
-                self.create_image(player1_pos['x']-57, player1_pos['y'], image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+                self.kite1_icon = tk.PhotoImage(file="kite1.png")
+                self.create_image(player1_pos['x']-57, player1_pos['y'], image=self.kite1_icon, anchor=tk.CENTER, tags="current_position1")
 
             elif player1_city in ['Virginia Avenue', 'States Avenue', 'St. Charles Place']:
-                self.kite_icon = tk.PhotoImage(file="kite.png")
-                self.create_image(player1_pos['x']+57, player1_pos['y'], image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+                self.kite1_icon = tk.PhotoImage(file="kite1.png")
+                self.create_image(player1_pos['x']+57, player1_pos['y'], image=self.kite1_icon, anchor=tk.CENTER, tags="current_position1")
             
             elif player1_city in ['Connecticut Avenue', 'Vermont Avenue', 'Oriental Avenue']:
-                self.kite_icon = tk.PhotoImage(file="kite.png")
-                self.create_image(player1_pos['x'], player1_pos['y']-57, image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+                self.kite1_icon = tk.PhotoImage(file="kite1.png")
+                self.create_image(player1_pos['x'], player1_pos['y']-57, image=self.kite1_icon, anchor=tk.CENTER, tags="current_position1")
 
             else:
-                self.kite_icon = tk.PhotoImage(file="kite.png")
-                self.create_image(player1_pos['x'], player1_pos['y']+57, image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
+                self.kite1_icon = tk.PhotoImage(file="kite1.png")
+                self.create_image(player1_pos['x'], player1_pos['y']+57, image=self.kite1_icon, anchor=tk.CENTER, tags="current_position1")
 
 
             if player2_city in ['Kentucky Avenue', 'Mediterranean Avenue', 'Baltic Avenue']:
-                self.star_icon = tk.PhotoImage(file="star.png")
-                self.create_image(player2_pos['x']-57, player2_pos['y'], image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+                self.star1_icon = tk.PhotoImage(file="star1.png")
+                self.create_image(player2_pos['x']-57, player2_pos['y'], image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
 
             elif player2_city in ['Virginia Avenue', 'States Avenue', 'St. Charles Place']:
-                self.star_icon = tk.PhotoImage(file="star.png")
-                self.create_image(player2_pos['x']+57, player2_pos['y'], image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+                self.star1_icon = tk.PhotoImage(file="star1.png")
+                self.create_image(player2_pos['x']+57, player2_pos['y'], image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
             
             elif player2_city in ['Connecticut Avenue', 'Vermont Avenue', 'Oriental Avenue']:
-                self.star_icon = tk.PhotoImage(file="star.png")
-                self.create_image(player2_pos['x'], player2_pos['y']-57, image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+                self.star1_icon = tk.PhotoImage(file="star1.png")
+                self.create_image(player2_pos['x'], player2_pos['y']-57, image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
 
             else:
-                self.star_icon = tk.PhotoImage(file="star.png")
-                self.create_image(player2_pos['x'], player2_pos['y']+57, image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+                self.star1_icon = tk.PhotoImage(file="star1.png")
+                self.create_image(player2_pos['x'], player2_pos['y']+57, image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
 
             self.current_pass += 1
             print(self.current_pass)
@@ -231,10 +231,10 @@ class MonopolyBoard(tk.Canvas):
         self.delete("random_action")
         self.delete("current_position1")
         self.delete("current_position2")
-        self.kite_icon = tk.PhotoImage(file="kite.png")
+        self.kite_icon = tk.PhotoImage(file="kite1.png")
         self.create_image(855, 560, image=self.kite_icon, anchor=tk.CENTER, tags="current_position1")
-        self.star_icon = tk.PhotoImage(file="star.png")
-        self.create_image(855, 590, image=self.star_icon, anchor=tk.CENTER, tags="current_position2")
+        self.star1_icon = tk.PhotoImage(file="star1.png")
+        self.create_image(855, 590, image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
         self.current_pass = 0
 
 def main():

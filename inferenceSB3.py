@@ -9,7 +9,7 @@ env = MonopolyEnv2(12, 6, 2, 1000, './city.csv')
 env.reset()
 
 # Load the saved model
-model_name = "260000.zip"
+model_name = "470000.zip"
 model = PPO.load(os.path.join(models_dir, model_name), env)
 
 # Run inference
