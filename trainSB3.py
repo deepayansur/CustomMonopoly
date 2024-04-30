@@ -3,7 +3,7 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 from monopoly.envs.monopoly_env2 import MonopolyEnv2
 
-env = MonopolyEnv2(12, 6, 2, 200)
+env = MonopolyEnv2(4, 3, 2, 200)
 
 ######################### RUN THIS TO CHECK ENV #######################
 
@@ -51,7 +51,7 @@ for episode in range(episodes):
             owner.append([city.name, owner_num])
         for player in env.players:
             worths.append([player.num, player.money])
-        print("OWNER:",owner)
+        print(owner)
         print(worths)
         print()
         
