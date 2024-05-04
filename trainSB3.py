@@ -19,15 +19,17 @@ env = MonopolyEnv2(12, 6, 2, 200)
 ######################### RUN FOR DRY RUN ###############################
 
 
-episodes = 1
+episodes = 100
+position_list = [0,0]
+file_path = "ownership_data.txt"
+with open(file_path, 'w') as file:
+    file.write("")
 
 for episode in range(episodes):
     done = False
     obs = env.reset()
-    position_list = [0,0]
-    file_path = "ownership_data.txt"
-    with open(file_path, 'w') as file:
-        file.write("")
+    
+    
     while not done:  # not done:
         print(f"Current_player: {env.current_player.num}")
         print(f"Position before roll: {env.current_player.pos}")

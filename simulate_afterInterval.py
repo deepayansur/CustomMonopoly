@@ -146,7 +146,7 @@ class MonopolyBoard(tk.Canvas):
             self.delete("current_position1")
             self.delete("current_position2")
             pass_data = self.pass_data[self.current_pass]
-            print(pass_data)
+            # print(pass_data)
             for city, player in pass_data:
                 print(pass_data)
                 if player in self.players:
@@ -221,8 +221,8 @@ class MonopolyBoard(tk.Canvas):
                 self.create_image(player2_pos['x'], player2_pos['y']+57, image=self.star1_icon, anchor=tk.CENTER, tags="current_position2")
 
             self.current_pass += 1
-            print(self.current_pass)
-            self.after(150, self.update_pass)
+            # print(self.current_pass)
+            self.after(500, self.update_pass)
 
     def reset(self):
         self.delete("player_circle")
@@ -295,7 +295,7 @@ def main():
             appended_pos_list.append(position_list)
     # print(appending_data)
     print("TOTAL PASSES:")
-    print(len(appending_data))
+    # print(len(appending_data))
 
     # Sample data
 #     board.pass_data = [
